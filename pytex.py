@@ -11,6 +11,13 @@ import shutil     as _shutil
 import tempfile   as _tempfile
 import subprocess as _subprocess
 
+# Todo: work out a better system to deal with options and packages,
+#       perhaps defining appropriate classes? It should be possible
+#       to merge instances of these classes to combine options and packages.
+
+# Todo: support a better interface for compilation and moving the produced PDF
+#       besides the automatic context manager.
+
 # Default options to pass to the documentclass command.
 DEFAULT_OPTIONS = [
     "a4paper",
