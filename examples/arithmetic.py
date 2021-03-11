@@ -15,7 +15,7 @@ with LaTeXDocument(
     # Todo: add align method to class TeXFile.
     texdoc.write("Here is some basic arithmetic:")
     texdoc.write("\\begin{align*}")
-    for _ in range(1, 11):
+    for _ in range(10):
         m = randint(1, 10)
         n = randint(1, 10)
         texdoc.write(f"{m} \\cdot {n} &= {m*n} \\\\")
